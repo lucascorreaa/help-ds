@@ -1,8 +1,8 @@
 import React, { ImgHTMLAttributes } from "react";
 
-export interface OwnProps extends ImgHTMLAttributes<HTMLImageElement> {}
+export interface IconProps extends ImgHTMLAttributes<HTMLImageElement> {}
 
-const Icon = (props: OwnProps) => {
+const Icon: React.FC<IconProps> = (props) => {
   return <img src={props.src} alt={props.alt} {...props} />;
 };
 

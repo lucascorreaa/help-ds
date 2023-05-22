@@ -1,10 +1,10 @@
 import React, { InputHTMLAttributes } from 'react'
 
-export interface OwnProps extends InputHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement> {
     label: string
 }
 
-const ButtonWrapper = (props: OwnProps) => {
+const ButtonWrapper: React.FC<ButtonProps> = (props) => {
 
     return (
         <div>
