@@ -1,5 +1,5 @@
 {
-  "name": "@demo/ds-neo",
+  "name": "help-ds",
   "version": "0.0.1",
   "description": "DS Neo",
   "main": "dist/cjs/index.ts",
@@ -26,5 +26,13 @@
   },
   "dependencies": {
     "tslib": "^2.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascorreaa/help-ds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucascorreaa/help-ds/issues"
+  },
+  "homepage": "https://github.com/lucascorreaa/help-ds#readme"
 }
