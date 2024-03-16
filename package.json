@@ -22,7 +22,8 @@
     "react": "^18.2.0",
     "rollup": "^2.79.1",
     "rollup-plugin-dts": "^4.2.2",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.3",
+    "styled-components": "^6.1.8"
   },
   "dependencies": {
     "tslib": "^2.4.0"
