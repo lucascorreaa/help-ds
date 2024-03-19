@@ -9,21 +9,34 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "lucascorreaa",
   "license": "ISC",
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.23",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-typescript": "^8.5.0",
+    "@storybook/addon-essentials": "^8.0.2",
+    "@storybook/addon-interactions": "^8.0.2",
+    "@storybook/addon-links": "^8.0.2",
+    "@storybook/addon-onboarding": "^8.0.2",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/blocks": "^8.0.2",
+    "@storybook/react": "^8.0.2",
+    "@storybook/react-webpack5": "^8.0.2",
+    "@storybook/test": "^8.0.2",
     "@types/react": "^18.0.21",
     "react": "^18.2.0",
     "rollup": "^2.79.1",
     "rollup-plugin-dts": "^4.2.2",
-    "typescript": "^4.8.3",
-    "styled-components": "^6.1.8"
+    "storybook": "^8.0.2",
+    "styled-components": "^6.1.8",
+    "typescript": "^4.8.3"
   },
   "dependencies": {
     "tslib": "^2.4.0"
