@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { TextButton as TextButton } from ".";
-import { ButtonProps } from ".";
+import type { Meta, StoryObj } from "@storybook/react"
+import { TextButton as TextButton } from "."
+import { ButtonProps } from "."
 
 const meta = {
   title: "Example/TextButton",
@@ -16,13 +16,13 @@ const meta = {
     label: { control: "text" },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-} satisfies Meta<ButtonProps>;
+} satisfies Meta<ButtonProps>
 
-export default meta;
+export default meta
 type Story = StoryObj<typeof meta>;
 
 export const ButtonText: Story = {
   args: {
     label: "Button",
   },
-};
+}
