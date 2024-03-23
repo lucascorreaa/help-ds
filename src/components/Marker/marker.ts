@@ -6,5 +6,5 @@ export const MarkerStyled = styled.hr<MarkerProps>`
     border-radius: ${({size}) => `${size}px`};
     height: ${({size}) => `${size}px`};
     width: ${({size}) => `${size}px`};
-    border: ${({isBorder, borderColor}) => isBorder && `4px solid ${borderColor}`};
+    border: ${({isBorder, borderColor, borderSize}) => isBorder && `${borderSize} solid ${borderColor}`};
 `
