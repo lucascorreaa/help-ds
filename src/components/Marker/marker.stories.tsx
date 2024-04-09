@@ -22,9 +22,9 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>;
 
-export const MarkerTest: Story = {
+export const MarkerStory: Story = {
   args: {
-    color: 'black',
+    color: 'green',
     borderColor: 'red',
     size: 20,
     isBorder: true,
