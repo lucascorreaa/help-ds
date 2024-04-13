@@ -15,5 +15,13 @@
     "moduleResolution": "node", // regras do node pra encontrar o modulo
     "allowSyntheticDefaultImports": true, // assumir as importacoes padroes
     "emitDeclarationOnly": true // exporta as tipagens
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "preview/**/*",
+  ]
 }
