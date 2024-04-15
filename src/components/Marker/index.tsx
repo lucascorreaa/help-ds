@@ -1,13 +1,6 @@
-import React, { HtmlHTMLAttributes } from "react"
+import React from "react"
 import { MarkerStyled } from "./marker"
-
-export interface MarkerProps extends HtmlHTMLAttributes<HTMLHRElement> {
-  color: string;
-  borderColor?: string
-  size: number;
-  isBorder?: boolean;
-  borderSize?: number;
-}
+import { MarkerProps } from './utils'
 
 export const Marker: React.FC<MarkerProps> = ({ borderSize, isBorder, size, color, borderColor, ...props }) => {
   return (

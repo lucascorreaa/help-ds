@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import { Marker } from "."
-import { MarkerProps } from "."
+import { MarkerProps } from './utils'
 
 const meta = {
   title: "Example/Marker",

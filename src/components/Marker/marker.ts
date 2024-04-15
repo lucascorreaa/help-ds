@@ -1,10 +1,11 @@
 import styled from "styled-components"
-import { MarkerProps } from "."
+import { MarkerProps, getBorder } from "./utils"
 
 export const MarkerStyled = styled.hr<MarkerProps>`
-    background-color: ${({color}) => color};
-    border-radius: ${({size}) => `${size}px`};
-    height: ${({size}) => `${size}px`};
-    width: ${({size}) => `${size}px`};
-    border: ${({isBorder, borderColor, borderSize}) => isBorder && `${borderSize} solid ${borderColor}`};
+  background-color: ${({ color }) => color};
+  border-radius: ${({ size }) => `${size}px`};
+  height: ${({ size }) => `${size}px`};
+  width: ${({ size }) => `${size}px`};
+  border: ${({ isBorder, borderColor, borderSize }) => getBorder(isBorder, borderColor, borderSize)};
 `
+
