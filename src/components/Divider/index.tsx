@@ -3,17 +3,18 @@ import StyledHR from './divider' // Importando o componente StyledHR do arquivo 
 
 export interface DividerProps extends HTMLAttributes<HTMLElement> {
   fullWidth?: boolean;
+  width?: number | undefined; // Nova propriedade que define o tamanho do Divider
   size?: number;
-  styled?: "solid" | "dotted";
+  styled?: string;
   color?: string;
-  orientation?: "horizontal" | "vertical"; // Nova propriedade de orientação
+  orientation?: "horizontal" | "vertical"; 
 }
 
 
-export const Divider: React.FC<DividerProps> = ({ fullWidth, size, styled, color, orientation }) => {
+export const Divider: React.FC<DividerProps> = ({ width, size, styled, color, orientation, fullWidth }) => {
   return (
     <>
-      <StyledHR fullWidth={fullWidth} size={size} styled={styled} color={color} orientation={orientation} />
+      <StyledHR width={width} size={size} styled={styled} color={color} fullWidth={fullWidth} orientation={orientation} />
     </>
   )
 }
